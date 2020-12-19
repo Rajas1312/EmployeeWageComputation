@@ -9,6 +9,9 @@ public class EmployeeWage {
 	public static final int MAX_HRS_IN_MONTHS=100;
 	
 	public static void main(String[] args) {
+		computeEmpWage();
+	}
+	public static int computeEmpWage() {
 		System.out.println("Welcome to EmployeeWage Computation");
 		int empHrs=0;
 		int empWage=0;
@@ -33,9 +36,10 @@ public class EmployeeWage {
 	 totalEmpWage+=empWage;
 	 System.out.println("Employe Wage is " + empWage);
 	 
-	}
-	
+		}
 	System.out.println("Total wage is " +totalEmpWage);
-}
+	return totalEmpWage;
+		
+	}
 
 }
